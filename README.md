@@ -1,43 +1,44 @@
 # Expense Tracker CLI 💰
 
-Este projeto é uma implementação prática do desafio Expense Tracker proposto pelo site roadmap.sh.
+Este projeto é uma implementação prática do desafio [Expense Tracker](https://roadmap.sh/projects/expense-tracker) proposto pelo site **roadmap.sh**.
 
 Trata-se de uma aplicação de linha de comandos (CLI) simples e interativa, construída em Java, que ajuda a gerir e monitorizar as suas despesas financeiras. Os dados são guardados de forma persistente num ficheiro CSV.
 
-### ✨ Funcionalidades
+## ✨ Funcionalidades
 
 A aplicação suporta os seguintes comandos principais:
 
-Adicionar Despesa (add): Regista uma nova despesa com uma descrição e o respetivo valor.
+* **Adicionar Despesa (`add`)**: Regista uma nova despesa com uma descrição e o respetivo valor.
 
-Listar Despesas (list): Exibe um histórico completo de todas as despesas registadas.
+* **Listar Despesas (`list`)**: Exibe um histórico completo de todas as despesas registadas.
 
-Eliminar Despesa (delete): Remove uma despesa específica com base no seu ID.
+* **Eliminar Despesa (`delete`)**: Remove uma despesa específica com base no seu ID.
 
-Resumo de Despesas (summary): Mostra o somatório de todas as despesas. Pode ser filtrado por um mês específico.
+* **Resumo de Despesas (`summary`)**: Mostra o somatório de todas as despesas. Pode ser filtrado por um mês específico.
 
-### 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-Java 20: Linguagem principal da aplicação.
+* **Java 20**: Linguagem principal da aplicação.
 
-Maven: Gestão de dependências e build do projeto.
+* **Maven**: Gestão de dependências e build do projeto.
 
-Picocli: Biblioteca utilizada para o parsing elegante dos comandos, opções e geração de menus de ajuda.
+* **Picocli**: Biblioteca utilizada para o parsing elegante dos comandos, opções e geração de menus de ajuda.
 
-OpenCSV: Utilizado para ler, escrever e mapear os dados das despesas de e para o ficheiro CSV (data/expenses.csv).
+* **OpenCSV**: Utilizado para ler, escrever e mapear os dados das despesas de e para o ficheiro CSV (`data/expenses.csv`).
 
-Command Pattern: A arquitetura do código baseia-se no padrão de desenho Command, separando a lógica de cada ação (Add, List, Delete, Summary) em classes distintas.
+* **Command Pattern**: A arquitetura do código baseia-se no padrão de desenho Command, separando a lógica de cada ação (Add, List, Delete, Summary) em classes distintas.
 
-### 🚀 Como Executar
+## 🚀 Como Executar
 
 Pode executar a aplicação diretamente através do Maven ou compilar e correr o ficheiro gerado.
 
-1. Pré-requisitos
+### 1. Pré-requisitos
 
-Certifique-se de que tem o Java JDK 20 (ou superior) e o Maven instalados na sua máquina.
+Certifique-se de que tem o **Java JDK 20** (ou superior) e o **Maven** instalados na sua máquina.
 
-2. Clonar e Compilar
+### 2. Clonar e Compilar
 
+```bash
 git clone [https://github.com/AmaralPH/expense-tracker-cli.git](https://github.com/AmaralPH/expense-tracker-cli.git)
 cd expense-tracker-cli
 mvn clean install
